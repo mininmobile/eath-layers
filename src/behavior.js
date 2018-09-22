@@ -1,3 +1,25 @@
+// smooth scroll
+
+{
+	smoothAnchor("crust");
+	smoothAnchor("mantle");
+	smoothAnchor("core-outer");
+	smoothAnchor("core-inner");
+	smoothAnchor("jump");
+
+	function smoothAnchor(link) {
+		let l = document.getElementById(`${link}-link`) || document.getElementById(link);
+		let a = document.getElementById(l.getAttribute("href").substring(1));
+
+		l.removeAttribute("href");
+
+		l.addEventListener("click", () =>
+			a.scrollIntoView({ behavior: "smooth" })
+		);
+
+	}
+}
+
 // jump to top
 
 {
