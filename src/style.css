@@ -83,7 +83,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .earth .crust:hover {
-	box-shadow: 0 0 2.5em inset black;
+	box-shadow: 0 0 5em inset black;
 }
 
 .earth .mantle {
