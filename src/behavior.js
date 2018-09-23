@@ -42,16 +42,31 @@
 	});
 }
 
-{ // jump to top
-	let jump = document.getElementById("jump");
+{ //jumpers
+	{ // jump to top
+		let jump = document.getElementById("jump");
+	
+		jump.classList.add("hidden");
+	
+		document.addEventListener("scroll", () =>
+			window.scrollY > window.innerHeight - 1 ?
+				jump.classList.remove("hidden") :
+				jump.classList.add("hidden")
+		);
+	}
 
-	jump.classList.add("hidden");
+	
+	{ // jump to bottom
+		let jump = document.getElementById("jumpb");
 
-	document.addEventListener("scroll", () =>
-		window.scrollY > window.innerHeight - 1 ?
-			jump.classList.remove("hidden") :
-			jump.classList.add("hidden")
-	);
+		jump.classList.remove("hidden");
+
+		document.addEventListener("scroll", () =>
+			window.scrollY > 1 ?
+				jump.classList.add("hidden") :
+				jump.classList.remove("hidden")
+		);
+	}
 }
 
 // init particles.js
