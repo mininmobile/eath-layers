@@ -191,8 +191,9 @@ a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	mask: url("img/checker.png");
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
+	-webkit-mask: url("img/checker.png");
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
 	image-rendering: -webkit-optimize-contrast;
 	image-rendering: optimize-contrast;
 	mask-size: 2% !important;
@@ -214,6 +215,7 @@ a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	mask: url("img/bubble.gif");
+	-webkit-mask: url("img/bubble.gif");
 	mask-size: 5% !important;
 	display: block;
 	border-radius: 50%;
@@ -234,6 +236,7 @@ a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	mask: url("img/bubble.gif");
+	-webkit-mask: url("img/bubble.gif");
 	mask-size: 15% !important;
 	display: block;
 	border-radius: 50%;
