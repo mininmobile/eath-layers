@@ -28,24 +28,19 @@
 	});
 }
 
-/* { // smooth scroll
-	smoothAnchor("crust");
-	smoothAnchor("mantle");
-	smoothAnchor("core-outer");
-	smoothAnchor("core-inner");
-	smoothAnchor("jump");
+{ // smooth scroll
+	let links = document.getElementsByClassName("link");
 
-	function smoothAnchor(link) {
-		let l = document.getElementById(link + "-link") || document.getElementById(link);
-		let a = document.getElementById(l.getAttribute("href").substring(1));
+	[].forEach.call(links, (link) => {
+		let anchor = document.getElementById(link.getAttribute("href").substring(1));
 
-		l.removeAttribute("href");
-
-		l.addEventListener("click", () =>
-			a.scrollIntoView({ behavior: "smooth" })
+		link.addEventListener("click", () =>
+			anchor.scrollIntoView({ behavior: "smooth" })
 		);
-	}
-} */
+
+		link.removeAttribute("href");
+	});
+}
 
 { // jump to top
 	let jump = document.getElementById("jump");
