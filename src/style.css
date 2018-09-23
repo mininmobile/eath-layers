@@ -191,12 +191,14 @@ a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	mask: url("img/checker.png");
+	mask-image: url("img/checker.png");
 	-webkit-mask: url("img/checker.png");
+	mask-size: 2% !important;
+	-webkit-mask-size: 2% !important;
 	image-rendering: -moz-crisp-edges;
 	image-rendering: -o-crisp-edges;
 	image-rendering: -webkit-optimize-contrast;
 	image-rendering: optimize-contrast;
-	mask-size: 2% !important;
 	display: block;
 	border-radius: 50%;
 }
@@ -215,8 +217,10 @@ a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	mask: url("img/bubble.gif");
+	mask-image: url("img/bubble.gif");
 	-webkit-mask: url("img/bubble.gif");
 	mask-size: 5% !important;
+	-webkit-mask-size: 5% !important;
 	display: block;
 	border-radius: 50%;
 	transform: rotate(225deg);
@@ -236,8 +240,10 @@ a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	mask: url("img/bubble.gif");
+	mask-image: url("img/bubble.gif");
 	-webkit-mask: url("img/bubble.gif");
 	mask-size: 15% !important;
+	-webkit-mask-size: 15% !important;
 	display: block;
 	border-radius: 50%;
 	transform: rotate(45deg);
