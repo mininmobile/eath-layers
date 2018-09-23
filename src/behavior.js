@@ -72,3 +72,17 @@
 		);
 	}
 }
+
+{ // easter egg owo
+	let input = "";
+	let key = "38384040373937396665";
+
+	document.addEventListener("keydown", (e) => {
+		input += "" + e.keyCode;
+
+		if (input === key) return window.location = "https://www.youtube.com/watch?v=RiHRI_Z2Kgs";
+		if (!key.indexOf(input)) return;
+
+		input = "" + e.keyCode;
+	});
+}
