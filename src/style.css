@@ -23,6 +23,8 @@ p, h1 {
 	font-weight: bold;
 }
 
+p { font-size: 1.1em }
+
 a {
 	color: white !important;
 	cursor: pointer;
@@ -63,6 +65,10 @@ a {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.section > p {
+	padding: 0 20vw;
 }
 
 .section.small {
