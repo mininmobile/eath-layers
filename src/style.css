@@ -195,3 +195,38 @@ a {
 	top: 18.75vh;
 	left: 18.75vh;
 }
+
+/* mobile optimizations */
+
+@media screen and (orientation:portrait) {
+	.earth {
+		width: 80vw;
+		height: 80vw;
+	}
+
+	.earth .crust {
+		width: 80vw;
+		height: 80vw;
+	}
+	
+	.earth .mantle {
+		width: 70vw;
+		height: 70vw;
+		top: 5vw;
+		left: 5vw;
+	}
+	
+	.earth .core.outer {
+		width: 40vw;
+		height: 40vw;
+		top: 20vw;
+		left: 20vw;
+	}
+	
+	.earth .core.inner {
+		width: 20vw;
+		height: 20vw;
+		top: 30vw;
+		left: 30vw;
+	}
+}
