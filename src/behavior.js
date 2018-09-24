@@ -20,8 +20,8 @@
 		});
 
 		tooltip.addEventListener("pointermove", (e) => {
-			tt.style.left = e.clientX + "px";
-			tt.style.top = e.clientY + "px";
+			tt.style.left = e.clientX + window.scrollX + "px";
+			tt.style.top = e.clientY + window.scrollY + "px";
 		});
 
 		tooltip.addEventListener("pointerleave", () => {
