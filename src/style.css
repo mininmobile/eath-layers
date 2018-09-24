@@ -153,6 +153,21 @@ a {
 	border-radius: 50%;
 }
 
+/*.earth::before {
+	content: "";
+	width: 200%;
+	height: 100%;
+	background: limegreen;
+	mask: url("img/continents.png");
+	mask-image: url("img/continents.png");
+	-webkit-mask: url("img/continents.png");
+	mask-size: 2% !important;
+	-webkit-mask-size: 2% !important;
+	display: block;
+	border-radius: 50%;
+	animation: scroll 60s infinite linear;
+}*/
+
 .earth > .clip {
 	width: 50%;
 	height: 100%;
@@ -206,7 +221,7 @@ a {
 	image-rendering: optimize-contrast;
 	display: block;
 	border-radius: 50%;
-	animation: spin 240s linear;
+	animation: spin 240s infinite linear;
 }
 
 .earth .mantle {
