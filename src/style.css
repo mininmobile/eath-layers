@@ -37,6 +37,11 @@ a {
 	pointer-events: none;
 }
 
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
 /* particles.js */
 
 .background {
@@ -201,6 +206,7 @@ a {
 	image-rendering: optimize-contrast;
 	display: block;
 	border-radius: 50%;
+	animation: spin 240s linear;
 }
 
 .earth .mantle {
@@ -216,14 +222,14 @@ a {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.2);
-	mask: url("img/bubble.gif");
-	mask-image: url("img/bubble.gif");
-	-webkit-mask: url("img/bubble.gif");
-	mask-size: 5% !important;
-	-webkit-mask-size: 5% !important;
+	mask: url("img/bubble-slow.gif");
+	mask-image: url("img/bubble-slow.gif");
+	-webkit-mask: url("img/bubble-slow.gif");
+	mask-size: 10% !important;
+	-webkit-mask-size: 10% !important;
 	display: block;
 	border-radius: 50%;
-	transform: rotate(225deg);
+	transform: rotate(45deg);
 }
 
 .earth .core.outer {
@@ -242,11 +248,11 @@ a {
 	mask: url("img/bubble.gif");
 	mask-image: url("img/bubble.gif");
 	-webkit-mask: url("img/bubble.gif");
-	mask-size: 15% !important;
-	-webkit-mask-size: 15% !important;
+	mask-size: 10% !important;
+	-webkit-mask-size: 10% !important;
 	display: block;
 	border-radius: 50%;
-	transform: rotate(45deg);
+	transform: rotate(225deg);
 }
 
 .earth .core.inner {
