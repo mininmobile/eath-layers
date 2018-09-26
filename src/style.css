@@ -46,8 +46,8 @@ a {
 }
 
 @keyframes scroll {
-	from { mask-position: 100%; -webkit-mask-position: 100%; }
-	to { mask-position: 0%; -webkit-mask-position: 0%; }
+	from { mask-position: 0; -webkit-mask-position: 0; }
+	to { mask-position: 100vh; -webkit-mask-position: 100vh; }
 }
 
 /* particles.js */
@@ -169,14 +169,14 @@ a {
 	mask: url("img/continents.png");
 	mask-image: url("img/continents.png");
 	-webkit-mask: url("img/continents.png");
-	mask-size: 200% !important;
-	-webkit-mask-size: 200% !important;
+	mask-size: 100vh !important;
+	-webkit-mask-size: 100vh !important;
 	position: relative;
 	left: 0;
 	top: 0;
 	display: block;
 	border-radius: 50%;
-	animation: scroll 60s infinite linear;
+	animation: scroll 45s infinite linear;
 }
 
 .earth > .clip {
@@ -293,9 +293,19 @@ a {
 /* mobile optimizations */
 
 @media screen and (orientation:portrait) {
+	@keyframes scroll {
+		from { mask-position: 0; -webkit-mask-position: 0; }
+		to { mask-position: 160vw; -webkit-mask-position: 160vw; }
+	}
+
 	.earth {
 		width: 80vw;
 		height: 80vw;
+	}
+
+	.earth::before {
+		mask-size: 160vw !important;
+		-webkit-mask-size: 160vw !important;
 	}
 
 	.earth .crust {
