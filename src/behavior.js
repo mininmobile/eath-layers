@@ -92,11 +92,9 @@
 		(navigator.appName == "Netscape" && navigator.appVersion.indexOf('Edge') > -1) ||
 		(navigator.appName == "Netscape" && navigator.appVersion.indexOf('Trident') > -1)) {
 		let warning = document.getElementById("edge-warning");
-
 		warning.removeAttribute("style");
 
 		let dismiss = document.getElementById("edge-warning-dismiss");
-		
 		dismiss.addEventListener("click", () => warning.style.display = "none");
 	}
 }
